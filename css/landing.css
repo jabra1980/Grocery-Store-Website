@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root{
+  --orange:#ff7800;
+  --black:#130f40;
+  --black:#2c2c54;
+  --light-color:#666;
+  --box-shadow:0 .5rem 1.5rem rgba(0,0,0,.1);
+  --border:.2rem solid rgba(0,0,0,.1);
+  
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin:0; padding:0;
+  box-sizing: border-box;
+  outline: none; border:none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+#brand{
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+}
+
+body{
+  background:#eee;
+}
+
+section{
+  padding:2rem 9%;
+}
+
+/* button */
+.btn{
+  margin-top: 1rem;
+  display: inline-block;
+  padding:.8rem 3rem;
+  font-size: 1.7rem;
+  border-radius: .5rem;
+  border:.2rem solid var(--black);
+  color:var(--black);
+  cursor: pointer;
+  background: none;
+}
+
+.btn:hover{
+  background: var(--orange);
+  color:#fff;
+}
+
+._btn{
+  display: inline-block;
+  margin-top: 1rem;
+  background:var(--orange);
+  color:#fff;
+  padding:.8rem 3rem;
+  font-size: 1.7rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+._btn:hover{
+  background:var(--black);
+}
+
+/* header */
+.header{
+  position: fixed;
+  top:0; left:0; right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding:2rem 9%;
+  background:#fff;
+  box-shadow: var(--box-shadow);
+}
+
+.header .logo{
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color:var(--black);
+}
+
+.header .logo i{
+  color:var(--orange);
+}
+
+.header .navbar a{
+  font-size: 1.7rem;
+  margin:0 1rem;
+  color:var(--black);
+}
+
+.header .navbar a:hover{
+  color:var(--orange);
+}
+
+.header .icons div{
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  border-radius: .5rem;
+  background: #eee;
+  color:var(--black);
+  font-size: 2rem;
+  margin-left: .3rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.header .icons div:hover{
+  background: var(--orange);
+  color:#fff;
+}
+
+.header .login-form{
+  position: absolute;
+  top:110%; right:-110%;
+  width:35rem;
+  box-shadow: var(--box-shadow);
+  padding:2rem;
+  border-radius: .5rem;
+  background: #fff;
+  text-align: center;
+  
+}
+
+.header .login-form.active{
+  right:2rem;
+  transition: .4s linear;
+}
+
+.header .login-form h3{
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.header .login-form .box{
+  width: 100%;
+  margin:.7rem 0;
+  background:#eee;
+  border-radius: .5rem;
+  padding:1rem;
+  font-size: 1.6rem;
+  color:var(--black);
+  text-transform: none;
+}
+
+.header .login-form p{
+  font-size: 1.4rem;
+  padding:.5rem 0;
+  color:var(--light-color);
+}
+
+.header .login-form p a{
+  color:var(--orange);
+  text-decoration: underline;
+}
+
+.header .register-form{
+  position: absolute;
+  top:110%; right:-110%;
+  width:35rem;
+  box-shadow: var(--box-shadow);
+  padding:2rem;
+  border-radius: .5rem;
+  background: #fff;
+  text-align: center;
+}
+
+.header .register-form.active{
+  right:2rem;
+  transition: .4s linear;
+}
+
+.header .register-form h3{
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  color: var(--black);
+}
+
+.header .register-form .box{
+  width: 100%;
+  margin:.7rem 0;
+  background:#eee;
+  border-radius: .5rem;
+  padding:1rem;
+  font-size: 1.6rem;
+  color:var(--black);
+  text-transform: none;
+}
+
+.header .register-form p{
+  font-size: 1.4rem;
+  padding:.5rem 0;
+  color:var(--light-color);
+}
+
+.header .register-form p a{
+  padding: 10px;
+  color:var(--orange);
+  text-decoration: underline;
+}
+
+
+
+/* home */
+._home{
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+._home ._image{
+    flex:1 1 40rem;
+    padding-top: 5rem;
+}
+  
+._home ._image img{
+    width:100%;
+}
+  
+._home ._content{
+    flex:1 1 40rem;
+}
+  
+._home ._content span{
+    font-size: 3rem;
+    color:#666;
+}
+  
+._home ._content h3{
+    font-size: 4.8rem;
+    color:var(--black);
+}
+
+
+
+/* Banner */
+
+._banner-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:1.5rem;
+}
+
+._banner-container ._banner{
+    flex:1 1 40rem;
+    height: 25rem;
+    overflow: hidden;
+    position: relative;
+}
+  
+._banner-container ._banner img{
+    height: 100%;
+    width:100%;
+    object-fit: cover;
+}
+  
+._banner-container ._banner ._content{
+    position: absolute;
+    top:50%; left: 4%;
+    transform: translateY(-50%);
+}
+  
+._banner-container ._banner ._content h3{
+    font-size: 3rem;
+    color:var(--black);
+}
+  
+._banner-container ._banner ._content p{
+    font-size: 2rem;
+    color:#333;
+}
+  
+._banner-container ._banner:hover img{
+    transform:scale(1.2) rotate(-5deg);
+}
+
+
+/* Deal */
+._deal{
+    margin: 0 138px;
+    margin-bottom: 25px;
+    background:url(../image/deal-bg.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+  
+._deal ._content{
+    max-width: 50rem;
+}
+  
+._deal ._content ._title{
+    font-size: 4rem;
+    color:var(--black);
+}
+  
+._deal ._content p{
+    font-size: 1.7rem;
+    padding:1rem 0;
+    color:#333;
+}
+  
+._deal ._content ._count-down{
+    display: flex;
+    gap:1rem;
+    padding:.5rem 0;
+}
+  
+._deal ._content ._count-down ._box{
+    width:9rem;
+    text-align: center;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:.1rem solid rgba(0,0,0,.3);
+}
+  
+._deal ._content ._count-down ._box h3{
+    color:var(--orange);
+    background:#fff;
+    height: 7rem;
+    line-height: 7rem;
+    width:100%;
+    font-size: 5rem;
+}
+  
+._deal ._content ._count-down ._box span{
+    display: block;
+    background:var(--black);
+    color:#fff;
+    width:100%;
+    padding:.5rem;
+    font-size: 2rem;
+  }
+
+  
+
+/* Error Msg */
+#errorMsg{
+    color:red;
+    text-align: left;
+    font-size: 10px;
+    padding-bottom: 10px;
+}
+
+#errorMsg1{
+  color:red;
+  text-align: left;
+  font-size: 10px;
+  padding-bottom: 10px;
+}
+
+
+/* footer */
+.copyright{
+  text-align: center;
+  padding-top: 10px;
+  font-size:10px;
+  color:var(--black);
+  border-top: var(--border);
+}
+
+.copyright span{
+  font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+
+
+
+
+@media (max-width:768px){
+
+  #menu-btn{
+      display: inline-block;
+  }
+
+  .header .search-form{
+      width:90%;
+  }
+
+  .header .navbar{
+      position: absolute;
+      top:110%; right:-110%;
+      width:30rem;
+      box-shadow: var(--box-shadow);
+      border-radius: .5rem;
+      background: #fff;
+  }
+
+  .header .navbar.active{
+      right:2rem;
+      transition: .4s linear;
+  }
+
+  .header .navbar a{
+      font-size: 2rem;
+      margin:2rem 2.5rem;
+      display: block;
+  }
+  ._deal{
+      background-position: left;
+    }
+  
+    ._deal ._content{
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    ._deal ._content ._count-down{
+      justify-content: center;
+    }
+
+}
+
+@media (max-width:450px){
+
+  html{
+      font-size: 50%;
+  }
+
+  .heading{
+      font-size: 2.5rem;
+  }
+
+  .footer{
+      text-align: center;
+  }
+
+  ._deal ._content ._count-down ._box h3{
+      font-size: 4rem;
+    }
+  
+    ._deal ._content ._count-down ._box span{
+      font-size: 1.5rem;
+    }
+
+}

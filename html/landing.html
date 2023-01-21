@@ -1,0 +1,164 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="shopping online">
+  	<meta name="keywords" content="HTML, CSS, JavaScript, Fresh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Fresh For Less - Welcome</title>
+    
+    <link rel="icon" href="../image/icon.png" type="image/icon type">
+    
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/landing.css">
+</head>
+
+
+
+<body>
+    
+<!-- header section -->
+
+<header class="header">
+
+    <a href="#" class="logo" id="brand"> <i class="fas fa-shopping-basket"></i> Fresh For Less </a>
+
+    <nav class="navbar">
+        <a href="index-1.html">home</a>
+    </nav>
+
+    <!-- Icons -->
+    <div class="icons">
+        <div class="fas fa-user-alt" id="register-btn"></div>
+        <div class="fas fa-sign-in-alt" id="login-btn"></div>
+    </div>
+
+    <!-- login-form -->
+    <form action="index.html" class="login-form">
+        <h3>login now</h3>
+        <input type="text" placeholder="your username" class="box" id="jo">
+        <input type="password" placeholder="your password" class="box" id="po">
+        <div id="errorMsg"></div>
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#" id="lg">create now</a></p>
+        <input type="submit" value="login now" class="btn" onclick="validate_1()">
+    </form>
+
+    <!-- register-form -->
+    <form action="" class="register-form">
+        <h3>register now</h3>
+        <input type="text" placeholder="full name" class="box" id="fName">
+        <input type="text" placeholder="username" class="box" id="uName">
+        <input type="email" placeholder="email address" class="box" id="1">
+        <input type="password" placeholder="password" class="box" id="2">
+        <input type="password" placeholder="confirm password" class="box" id="rPass">
+        <div id="errorMsg1"></div>
+        <p>already have an account<a href="#" id="re">login now</a></p>
+        <input type="submit" value="Sign Up" class="btn" onclick="validate2()">
+    </form>
+
+</header>
+
+
+
+<!-- home section -->
+
+<section class="_home" id="_home">
+
+    <div class="_image">
+        <img src="../image/home-img.png" alt="">
+    </div>
+
+    <div class="_content">
+        <span>fresh and organic</span>
+        <h3>your daily need products</h3>
+        <a href="#" class="_btn" id="gStart">get started</a>
+    </div>
+
+</section>
+
+
+
+<!-- banner section -->
+
+<section class="_banner-container">
+
+    <div class="_banner">
+        <img src="../image/banner-1.jpg" alt="">
+        <div class="_content">
+            <h3>special offer</h3>
+            <p>upto 45% off</p>
+            <a href="#" class="_btn" id="cOut">Check Out</a>
+        </div>
+    </div>
+
+    <div class="_banner">
+        <img src="../image/banner-2.jpg" alt="">
+        <div class="_content">
+            <h3>limited offer</h3>
+            <p>upto 50% off</p>
+            <a href="#" class="_btn" id="cOut1">Check Out</a>
+        </div>
+    </div>
+
+</section>
+
+
+
+<!-- deal section starts  -->
+
+<section class="_deal" id="_deal">
+
+    <div class="_content">
+
+        <h3 class="_title">deal of the day</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam possimus voluptates commodi laudantium! Doloribus sint voluptatibus quaerat sequi suscipit nulla?</p>
+
+        <!-- count-down -->
+        <div class="_count-down">
+
+            <div class="_box">
+                <h3 id="_day">00</h3>
+                <span>day</span>
+            </div>
+
+            <div class="_box">
+                <h3 id="_hour">00</h3>
+                <span>hour</span>
+            </div>
+
+            <div class="_box">
+                <h3 id="_minute">00</h3>
+                <span>minute</span>
+            </div>
+
+            <div class="_box">
+                <h3 id="_second">00</h3>
+                <span>second</span>
+            </div>
+
+        </div>
+
+        <a href="#" class="_btn" id="cDeal">check the deal</a>
+
+    </div>
+
+</section>
+
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+    <div class="copyright"> Copyright &copy;<span> 2022 Fresh For Less inc. </span> All Rights Reserved </div>
+
+</section>
+
+
+</body>
+
+<!-- custom js file link  -->
+<script src="../js/landing.js"></script>
+
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="shopping online">
+  	<meta name="keywords" content="HTML, CSS, JavaScript, Fresh">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Fresh For Less - Payment</title>
+
+    <link rel="icon" href="../image/icon.png" type="image/icon type">
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="../css/payment.css">
+
+</head>
+
+
+<body>
+    
+<!-- header section  -->
+
+<header class="header">
+
+    <a href="#" class="logo" id="brand"> <i class="fas fa-shopping-basket"></i> Fresh For Less </a>
+    
+    <nav class="navbar">
+        <a href="index.html">home</a>
+        
+    </nav>
+
+    <!-- Icons -->
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <div class="fas fa-sign-out-alt" id="logout-btn"></div>
+    </div>
+
+    <!-- shopping form -->
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="../image/cart-img-1.png" alt="">
+            <div class="content">
+                <h3>watermelon</h3>
+                <span class="price">$2.99/-</span>
+                <span class="quantity">qty : 2</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="../image/cart-img-2.png" alt="">
+            <div class="content">
+                <h3>onion</h3>
+                <span class="price">$1.99/-</span>
+                <span class="quantity">qty : 3</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="../image/cart-img-3.png" alt="">
+            <div class="content">
+                <h3>chicken</h3>
+                <span class="price">$7.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total"> total : $12.97/- </div>
+    </div>
+
+    <!-- logout-form -->
+    <form action="landing.html" class="logout-form">
+        <h3>Welcame, Admin</h3>
+        <input type="submit" value="logout" class="btn" onclick="goout()">
+    </form>
+
+</header>
+
+<!-- home section  -->
+<div class="container">
+
+    <form action="" id="payForm">
+
+        <div class="row">
+
+            <div class="col">
+
+                <h3 class="title">billing address</h3>
+
+                <div class="inputBox">
+                    <span><i>* </i>full name</span>
+                    <input type="text" placeholder="Full Name" name="fuName" class="fofo">
+                    <p class="errorMsg">Name must not be contains numbers</p>
+                </div>
+
+                <div class="inputBox">
+                    <span><i>* </i>email</span>
+                    <input type="email" placeholder="example@example.com" name="email" class="fofo">
+                    <p class="errorMsg">Password must be alphanumeric (@, _ and - are allowed) and be 8-20 characters</p>
+                </div>
+
+                <div class="inputBox">
+                    <span><i>* </i>address</span>
+                    <input type="text" placeholder="your address" name="address" class="fofo">
+                    <p class="errorMsg">Address not valid</p>
+                </div>
+
+                <div class="inputBox">
+                    <span><i>* </i>city</span>
+                    <input type="text" placeholder="your City" name="city" class="fofo">
+                    <p class="errorMsg">City not valid</p>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span><i>* </i>state</span>
+                        <input type="text" placeholder="Your State" name="state" class="fofo">
+                        <p class="errorMsg">State not valid</p>
+                    </div>
+                    <div class="inputBox">
+                        <span><i>* </i>zip code</span>
+                        <input type="text" placeholder="H1H 1H1" name="zipCode" class="fofo">
+                        <p class="errorMsg">ZipCode not valid</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col">
+
+                <h3 class="title">payment</h3>
+
+                <div class="inputBox">
+                    <span>cards accepted</span>
+                    <img src="../image/card_img.png">
+                </div>
+                <div class="inputBox">
+                    <span><i>* </i>name on card</span>
+                    <input type="text" placeholder="JABRA JABRA" name="caName" class="fofo">
+                    <p class="errorMsg">Name must not be contains numbers and Caps_Lock</p>
+                </div>
+                <div class="inputBox">
+                    <span><i>* </i>credit card number</span>
+                    <input type="text" placeholder="1111-2222-3333-4444" name="creditCard" class="fofo">
+                    <p class="errorMsg">Please Enter Valid Card Number</p>
+                </div>
+                <div class="inputBox">
+                    <span><i>* </i>expiry month</span>
+                    <input type="text" placeholder="january" name="exMonth" class="fofo">
+                    <p class="errorMsg">Expiry Month not valid</p>
+                </div>
+
+                <div class="flex">
+                    <div class="inputBox">
+                        <span><i>* </i>expiry year</span>
+                        <input type="number" placeholder="2022" name="exYear" class="fofo">
+                        <p class="errorMsg">Expiry Year not valid</p>
+                    </div>
+                    <div class="inputBox">
+                        <span><i>* </i>CVV</span>
+                        <input type="text" placeholder="123" name="cvv" class="fofo">
+                        <p class="errorMsg">CVV must not be contains 3 digits</p>
+                    </div>
+                </div>
+
+            </div>
+    
+        </div>
+
+        
+        
+        <div class="tacbox">
+            <input id="checkbox" type="checkbox" />
+            <label for="checkbox"><i>* </i> I agree to these <a href="#">Terms and Conditions</a>.</label>
+          </div>
+        
+        <input type="button" value="proceed to checkout" class="submit-btn">
+        
+        
+        <input type="button" value="clear" class="submit-btn2">
+        
+
+    </form>
+
+</div>
+
+
+<!-- footer section -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3><i class="fas fa-shopping-basket"></i> Fresh For Less</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, saepe.</p>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+            </div>
+        </div>
+
+        <!-- contact info -->
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> (514)-456-7890 </a>
+            <a href="#" class="links"> <i class="fas fa-phone"></i> (514)-222-3333 </a>
+            <a href="#" class="links"> <i class="fas fa-envelope"></i> freshforless@company.ca </a>
+            <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Laval, QC </a>
+        </div>
+
+        <!-- quick links -->
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> home </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> features </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> products </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> categories </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> review </a>
+            <a href="#" class="links"> <i class="fas fa-arrow-right"></i> blogs </a>
+        </div>
+
+        <!-- newsletter -->
+        <div class="box">
+            <h3>newsletter</h3>
+            <p>subscribe for latest updates</p>
+            <input type="email" placeholder="your email" class="email">
+            <input type="submit" value="subscribe" class="btn">
+            <img src="../image/payment.png" class="payment-img" alt="">
+        </div>
+
+    </div>
+
+    <div class="copyright"> Copyright &copy;<span> 2022 Fresh For Less inc. </span> All Rights Reserved </div>
+
+</section>
+
+
+
+<!-- custom js file link  -->
+<script src="../js/payment.js"></script>
+
+</body>
+</html>
